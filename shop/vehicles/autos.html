@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehículos Premium - Muvi Rp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auto.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo"><a href="../../index.html">Muvi Rp</a></div>
+  <button id="menuBtn">&#9776;</button>
+  <div class="menu">
+    <a href="../../index.html#about">Nosotros</a>
+    <a href="../../index.html#gallery">Galería</a>
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle">Shop <span class="dropdown-arrow">▾</span></a>
+      <div class="dropdown-menu">
+        <a href="../vehicles/autos.html">🚗 Vehículos</a>
+        <a href="../od/delictivo.html">🔫 OD</a>
+      </div>
+    </div>
+    <a href="../../index.html#updates">Novedades</a>
+    <a href="../../index.html#staff">Equipo</a>
+    <a href="../../index.html#contact">Contacto</a>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="side-menu" id="sideMenu">
+  <button class="close-btn" id="closeBtn">&times;</button>
+  <a href="../../index.html#about">Nosotros</a>
+  <a href="../../index.html#gallery">Galería</a>
+  <div class="mobile-dropdown">
+    <span class="mobile-dropdown-title">Shop</span>
+    <a href="../vehicles/autos.html">🚗 Vehículos</a>
+    <a href="../od/delictivo.html">🔫 OD</a>
+  </div>
+  <a href="../../index.html#updates">Novedades</a>
+  <a href="../../index.html#staff">Equipo</a>
+  <a href="../../index.html#contact">Contacto</a>
+</div>
+
+<!-- Hero Section -->
+<section class="shop-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <span class="hero-badge">🚗 Catálogo Premium</span>
+    <h1>Vehículos <span class="gradient-text">Exclusivos</span></h1>
+    <p>Descubre nuestra colección de vehículos de alta gama. Desde deportivos hasta clásicos, encuentra tu ride perfecto.</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-number">50+</span>
+        <span class="stat-label">Vehículos</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">4</span>
+        <span class="stat-label">Categorías</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">24/7</span>
+        <span class="stat-label">Disponibles</span>
+      </div>
+    </div>
+    <button class="hero-btn" id="viewAllBtn">
+      <span>🚘 Ver Todas las Categorías</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+      </svg>
+    </button>
+  </div>
+</section>
+
+<!-- Category Tabs -->
+<section class="categories-section">
+  <div class="categories-container">
+    <div class="category-tabs">
+      <button class="tab" data-category="all">
+        <span class="tab-icon">🚘</span>
+        <span class="tab-text">Todos</span>
+      </button>
+      <button class="tab active" data-category="deportivos">
+        <span class="tab-icon">🏎️</span>
+        <span class="tab-text">Deportivos</span>
+      </button>
+      <button class="tab" data-category="clasicos">
+        <span class="tab-icon">🏁</span>
+        <span class="tab-text">Clásicos</span>
+      </button>
+      <button class="tab" data-category="suv">
+        <span class="tab-icon">🚙</span>
+        <span class="tab-text">SUV</span>
+      </button>
+      <button class="tab" data-category="motos">
+        <span class="tab-icon">🏍️</span>
+        <span class="tab-text">Motos</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Cars Grid -->
+<section class="cars-section">
+  <div class="cars-container">
+    
+    <!-- Todos -->
+    <div class="cars-category" id="all">
+      <div class="category-header">
+        <h2>🚘 Todos los Vehículos</h2>
+        <p>Explora nuestra colección completa</p>
+      </div>
+      <div class="cars-grid all-cars">
+        <!-- Deportivos destacados -->
+        <div class="car-card featured">
+          <div class="card-badge">⭐ Popular</div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=600&q=80" alt="Itali GTO">
+          </div>
+          <div class="card-content">
+            <span class="card-category">🏎️ Deportivo</span>
+            <h3>Itali GTO</h3>
+            <p class="card-desc">El deportivo italiano definitivo.</p>
+            <div class="card-specs">
+              <span><strong>350</strong> km/h</span>
+              <span><strong>V12</strong></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$250,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Comet SR">
+          </div>
+          <div class="card-content">
+            <span class="card-category">🏎️ Deportivo</span>
+            <h3>Comet SR</h3>
+            <p class="card-desc">Potencia alemana en estado puro.</p>
+            <div class="card-specs">
+              <span><strong>320</strong> km/h</span>
+              <span><strong>Flat-6</strong></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$190,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=600&q=80" alt="Zentorno">
+          </div>
+          <div class="card-content">
+            <span class="card-category">🏎️ Deportivo</span>
+            <h3>Zentorno</h3>
+            <p class="card-desc">Superdeportivo de élite.</p>
+            <div class="card-specs">
+              <span><strong>380</strong> km/h</span>
+              <span><strong>V10</strong></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$350,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-badge new">🆕 Nuevo</div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=600&q=80" alt="Turismo R">
+          </div>
+          <div class="card-content">
+            <span class="card-category">🏎️ Deportivo</span>
+            <h3>Turismo R</h3>
+            <p class="card-desc">El hiperdeportivo más exclusivo.</p>
+            <div class="card-specs">
+              <span><strong>400</strong> km/h</span>
+              <span><strong>W16</strong></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$500,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clásicos -->
+        <div class="car-card featured">
+          <div class="card-badge">👑 Legendario</div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=600&q=80" alt="Tornado">
+          </div>
+          <div class="card-content">
+            <span class="card-category">🏁 Clásico</span>
+            <h3>Tornado Custom</h3>
+            <p class="card-desc">El clásico americano por excelencia.</p>
+            <div class="card-specs">
+              <span><strong>180</strong> km/h</span>
+              <span><strong>V8</strong></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$85,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=600&q=80" alt="Manana">
+          </div>
+          <div class="card-content">
+            <span class="card-category">🏁 Clásico</span>
+            <h3>Manana</h3>
+            <p class="card-desc">Convertible clásico para pasear.</p>
+            <div class="card-specs">
+              <span><strong>160</strong> km/h</span>
+              <span><strong>V6</strong></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$60,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=600&q=80" alt="Peyote">
+          </div>
+          <div class="card-content">
+            <span class="card-category">🏁 Clásico</span>
+            <h3>Peyote Gasser</h3>
+            <p class="card-desc">Hot rod de los 50s modificado.</p>
+            <div class="card-specs">
+              <span><strong>200</strong> km/h</span>
+              <span><strong>V8</strong></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$95,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUV -->
+        <div class="car-card featured">
+          <div class="card-badge">💎 Premium</div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=600&q=80" alt="Baller">
+          </div>
+          <div class="card-content">
+            <span class="card-category">🚙 SUV</span>
+            <h3>Baller ST</h3>
+            <p class="card-desc">SUV de lujo blindado.</p>
+            <div class="card-specs">
+              <span><strong>240</strong> km/h</span>
+              <span><strong>V8</strong></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$130,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=600&q=80" alt="Radius">
+          </div>
+          <div class="card-content">
+            <span class="card-category">🚙 SUV</span>
+            <h3>Radius</h3>
+            <p class="card-desc">SUV compacto y versátil.</p>
+            <div class="card-specs">
+              <span><strong>200</strong> km/h</span>
+              <span><strong>V6</strong></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$95,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="XLS">
+          </div>
+          <div class="card-content">
+            <span class="card-category">🚙 SUV</span>
+            <h3>XLS Blindado</h3>
+            <p class="card-desc">Protección ejecutiva máxima.</p>
+            <div class="card-specs">
+              <span><strong>220</strong> km/h</span>
+              <span><strong>V8</strong></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$180,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Motos -->
+        <div class="car-card featured">
+          <div class="card-badge">🔥 Velocidad</div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=600&q=80" alt="Bati 801RR">
+          </div>
+          <div class="card-content">
+            <span class="card-category">🏍️ Moto</span>
+            <h3>Bati 801RR</h3>
+            <p class="card-desc">La moto más rápida de la ciudad.</p>
+            <div class="card-specs">
+              <span><strong>280</strong> km/h</span>
+              <span><strong>1000cc</strong></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$60,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=600&q=80" alt="Hakuchou">
+          </div>
+          <div class="card-content">
+            <span class="card-category">🏍️ Moto</span>
+            <h3>Hakuchou Drag</h3>
+            <p class="card-desc">Preparada para las calles.</p>
+            <div class="card-specs">
+              <span><strong>300</strong> km/h</span>
+              <span><strong>1300cc</strong></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$75,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=600&q=80" alt="PCJ-600">
+          </div>
+          <div class="card-content">
+            <span class="card-category">🏍️ Moto</span>
+            <h3>PCJ-600</h3>
+            <p class="card-desc">Clásica y confiable.</p>
+            <div class="card-specs">
+              <span><strong>220</strong> km/h</span>
+              <span><strong>600cc</strong></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$45,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deportivos -->
+    <div class="cars-category active" id="deportivos">
+      <div class="category-header">
+        <h2>🏎️ Deportivos</h2>
+        <p>Velocidad y estilo en cada curva</p>
+      </div>
+      <div class="cars-grid">
+        <div class="car-card featured">
+          <div class="card-badge">⭐ Popular</div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=600&q=80" alt="Itali GTO">
+          </div>
+          <div class="card-content">
+            <h3>Itali GTO</h3>
+            <p class="card-desc">El deportivo italiano definitivo. Velocidad máxima y diseño elegante.</p>
+            <div class="card-specs">
+              <span><strong>350</strong> km/h</span>
+              <span><strong>V12</strong> Motor</span>
+              <span><strong>2.1s</strong> 0-100</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$250,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Comet SR">
+          </div>
+          <div class="card-content">
+            <h3>Comet SR</h3>
+            <p class="card-desc">Potencia alemana en estado puro.</p>
+            <div class="card-specs">
+              <span><strong>320</strong> km/h</span>
+              <span><strong>Flat-6</strong> Motor</span>
+              <span><strong>2.8s</strong> 0-100</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$190,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=600&q=80" alt="Zentorno">
+          </div>
+          <div class="card-content">
+            <h3>Zentorno</h3>
+            <p class="card-desc">Superdeportivo de élite.</p>
+            <div class="card-specs">
+              <span><strong>380</strong> km/h</span>
+              <span><strong>V10</strong> Motor</span>
+              <span><strong>1.9s</strong> 0-100</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$350,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-badge new">🆕 Nuevo</div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=600&q=80" alt="Turismo R">
+          </div>
+          <div class="card-content">
+            <h3>Turismo R</h3>
+            <p class="card-desc">El hiperdeportivo más exclusivo.</p>
+            <div class="card-specs">
+              <span><strong>400</strong> km/h</span>
+              <span><strong>W16</strong> Motor</span>
+              <span><strong>1.7s</strong> 0-100</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$500,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clásicos -->
+    <div class="cars-category" id="clasicos">
+      <div class="category-header">
+        <h2>🏁 Clásicos</h2>
+        <p>Elegancia atemporal</p>
+      </div>
+      <div class="cars-grid">
+        <div class="car-card featured">
+          <div class="card-badge">👑 Legendario</div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=600&q=80" alt="Tornado">
+          </div>
+          <div class="card-content">
+            <h3>Tornado Custom</h3>
+            <p class="card-desc">El clásico americano por excelencia. Restaurado a la perfección.</p>
+            <div class="card-specs">
+              <span><strong>180</strong> km/h</span>
+              <span><strong>V8</strong> Motor</span>
+              <span><strong>1965</strong> Año</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$85,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=600&q=80" alt="Manana">
+          </div>
+          <div class="card-content">
+            <h3>Manana</h3>
+            <p class="card-desc">Convertible clásico para pasear.</p>
+            <div class="card-specs">
+              <span><strong>160</strong> km/h</span>
+              <span><strong>V6</strong> Motor</span>
+              <span><strong>1972</strong> Año</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$60,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=600&q=80" alt="Peyote">
+          </div>
+          <div class="card-content">
+            <h3>Peyote Gasser</h3>
+            <p class="card-desc">Hot rod de los 50s modificado.</p>
+            <div class="card-specs">
+              <span><strong>200</strong> km/h</span>
+              <span><strong>V8</strong> Motor</span>
+              <span><strong>1958</strong> Año</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$95,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUV -->
+    <div class="cars-category" id="suv">
+      <div class="category-header">
+        <h2>🚙 SUV</h2>
+        <p>Potencia y espacio</p>
+      </div>
+      <div class="cars-grid">
+        <div class="car-card featured">
+          <div class="card-badge">💎 Premium</div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=600&q=80" alt="Baller">
+          </div>
+          <div class="card-content">
+            <h3>Baller ST</h3>
+            <p class="card-desc">SUV de lujo blindado. Elegancia y seguridad combinadas.</p>
+            <div class="card-specs">
+              <span><strong>240</strong> km/h</span>
+              <span><strong>V8</strong> Motor</span>
+              <span><strong>5</strong> Plazas</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$130,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=600&q=80" alt="Radius">
+          </div>
+          <div class="card-content">
+            <h3>Radius</h3>
+            <p class="card-desc">SUV compacto y versátil.</p>
+            <div class="card-specs">
+              <span><strong>200</strong> km/h</span>
+              <span><strong>V6</strong> Motor</span>
+              <span><strong>5</strong> Plazas</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$95,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="XLS">
+          </div>
+          <div class="card-content">
+            <h3>XLS Blindado</h3>
+            <p class="card-desc">Protección ejecutiva máxima.</p>
+            <div class="card-specs">
+              <span><strong>220</strong> km/h</span>
+              <span><strong>V8</strong> Motor</span>
+              <span><strong>7</strong> Plazas</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$180,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Motos -->
+    <div class="cars-category" id="motos">
+      <div class="category-header">
+        <h2>🏍️ Motocicletas</h2>
+        <p>Libertad sobre dos ruedas</p>
+      </div>
+      <div class="cars-grid">
+        <div class="car-card featured">
+          <div class="card-badge">🔥 Velocidad</div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=600&q=80" alt="Bati 801RR">
+          </div>
+          <div class="card-content">
+            <h3>Bati 801RR</h3>
+            <p class="card-desc">La moto más rápida de la ciudad. Diseño aerodinámico extremo.</p>
+            <div class="card-specs">
+              <span><strong>280</strong> km/h</span>
+              <span><strong>1000cc</strong></span>
+              <span><strong>2.0s</strong> 0-100</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$60,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=600&q=80" alt="Hakuchou">
+          </div>
+          <div class="card-content">
+            <h3>Hakuchou Drag</h3>
+            <p class="card-desc">Preparada para las calles.</p>
+            <div class="card-specs">
+              <span><strong>300</strong> km/h</span>
+              <span><strong>1300cc</strong></span>
+              <span><strong>1.8s</strong> 0-100</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$75,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=600&q=80" alt="PCJ-600">
+          </div>
+          <div class="card-content">
+            <h3>PCJ-600</h3>
+            <p class="card-desc">Clásica y confiable.</p>
+            <div class="card-specs">
+              <span><strong>220</strong> km/h</span>
+              <span><strong>600cc</strong></span>
+              <span><strong>3.2s</strong> 0-100</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$45,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>¿No encuentras lo que buscas?</h2>
+    <p>Contáctanos en Discord y te ayudamos a encontrar tu vehículo ideal</p>
+    <a href="https://discord.gg/muvir" class="cta-btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
+      Contactar en Discord
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>Muvi Rp</h3>
+      <p>La mejor experiencia de roleplay en español.</p>
+      <div class="footer-social">
+        <a href="https://discord.gg/muvir" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
+        </a>
+        <a href="https://instagram.com/muvir" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+        </a>
+        <a href="https://tiktok.com/@muvir" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/3046/3046123.png" alt="TikTok">
+        </a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Navegación</h4>
+        <a href="../../index.html#about">Nosotros</a>
+        <a href="../../index.html#gallery">Galería</a>
+        <a href="../../index.html#updates">Novedades</a>
+        <a href="../../index.html#staff">Equipo</a>
+      </div>
+      <div class="footer-column">
+        <h4>Shop</h4>
+        <a href="../vehicles/autos.html">Vehículos</a>
+        <a href="../od/delictivo.html">Sistema OD</a>
+      </div>
+      <div class="footer-column">
+        <h4>Soporte</h4>
+        <a href="../../index.html#contact">Contacto</a>
+        <a href="https://discord.gg/muvir" target="_blank">Discord</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Muvi Rp. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script>
+// Tab switching
+const tabs = document.querySelectorAll('.tab');
+const categories = document.querySelectorAll('.cars-category');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const category = tab.dataset.category;
+    
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    
+    categories.forEach(cat => {
+      cat.classList.remove('active');
+      if(cat.id === category) {
+        cat.classList.add('active');
+      }
+    });
+  });
+});
+
+// View All Button - scrolls to categories and activates "Todos"
+const viewAllBtn = document.getElementById('viewAllBtn');
+if(viewAllBtn) {
+  viewAllBtn.addEventListener('click', () => {
+    // Activate "Todos" tab
+    tabs.forEach(t => t.classList.remove('active'));
+    const allTab = document.querySelector('.tab[data-category="all"]');
+    if(allTab) allTab.classList.add('active');
+    
+    // Show all vehicles category
+    categories.forEach(cat => {
+      cat.classList.remove('active');
+      if(cat.id === 'all') {
+        cat.classList.add('active');
+      }
+    });
+    
+    // Scroll to categories section
+    const categoriesSection = document.querySelector('.categories-section');
+    if(categoriesSection) {
+      categoriesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+}
+
+// Mobile Menu
+const menuBtn = document.getElementById('menuBtn');
+const closeBtn = document.getElementById('closeBtn');
+const sideMenu = document.getElementById('sideMenu');
+const menuOverlay = document.getElementById('menuOverlay');
+
+function toggleMenu() {
+  sideMenu.classList.toggle('active');
+  menuOverlay.classList.toggle('active');
+}
+
+menuBtn.addEventListener('click', toggleMenu);
+closeBtn.addEventListener('click', toggleMenu);
+menuOverlay.addEventListener('click', toggleMenu);
+
+// Card animations on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.car-card').forEach(card => observer.observe(card));
+</script>
+
+</body>
+</html>

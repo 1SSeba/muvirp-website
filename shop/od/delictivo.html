@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema OD - Muvi Rp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="delictivo.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo"><a href="../../index.html">Muvi Rp</a></div>
+  <button id="menuBtn">&#9776;</button>
+  <div class="menu">
+    <a href="../../index.html#about">Nosotros</a>
+    <a href="../../index.html#gallery">Galería</a>
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle">Shop <span class="dropdown-arrow">▾</span></a>
+      <div class="dropdown-menu">
+        <a href="../vehicles/autos.html">🚗 Vehículos</a>
+        <a href="../od/delictivo.html">🔫 OD</a>
+      </div>
+    </div>
+    <a href="../../index.html#updates">Novedades</a>
+    <a href="../../index.html#staff">Equipo</a>
+    <a href="../../index.html#contact">Contacto</a>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="side-menu" id="sideMenu">
+  <button class="close-btn" id="closeBtn">&times;</button>
+  <a href="../../index.html#about">Nosotros</a>
+  <a href="../../index.html#gallery">Galería</a>
+  <div class="mobile-dropdown">
+    <span class="mobile-dropdown-title">Shop</span>
+    <a href="../vehicles/autos.html">🚗 Vehículos</a>
+    <a href="../od/delictivo.html">🔫 OD</a>
+  </div>
+  <a href="../../index.html#updates">Novedades</a>
+  <a href="../../index.html#staff">Equipo</a>
+  <a href="../../index.html#contact">Contacto</a>
+</div>
+
+<!-- Hero Section -->
+<section class="shop-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">🔫 Sistema Delictivo</span>
+    <h1>Organizaciones <span class="gradient-text">Delictivas</span></h1>
+    <p>Domina las calles con tu organización. Bandas, mafias y carteles con sistemas únicos de territorio, economía y poder.</p>
+  </div>
+</section>
+
+<!-- Category Tabs -->
+<section class="categories-section">
+  <div class="categories-container">
+    <div class="category-tabs">
+      <button class="tab active" data-category="bandas">
+        <span class="tab-icon">🔥</span>
+        <span class="tab-text">Bandas</span>
+      </button>
+      <button class="tab" data-category="mafias">
+        <span class="tab-icon">🎩</span>
+        <span class="tab-text">Mafias</span>
+      </button>
+      <button class="tab" data-category="carteles">
+        <span class="tab-icon">💀</span>
+        <span class="tab-text">Carteles</span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<!-- Warning Section -->
+<section class="warning-section">
+  <div class="warning-content">
+    <span class="warning-icon">⚠️</span>
+    <h3>Importante</h3>
+    <p>El sistema delictivo requiere seguir las normas del servidor. El abuso de mecánicas o el incumplimiento de reglas puede resultar en sanciones.</p>
+  </div>
+</section>
+
+<!-- Organizations Grid -->
+<section class="orgs-section">
+  <div class="orgs-container">
+    
+    <!-- Bandas -->
+    <div class="orgs-category active" id="bandas">
+      <div class="category-header">
+        <h2>🔥 Bandas Callejeras</h2>
+        <p>Controla tu barrio, gana respeto</p>
+      </div>
+      <div class="orgs-grid">
+        <div class="org-card featured">
+          <div class="card-badge">🏆 Top Seller</div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=600&q=80" alt="Los Santos Vagos">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Pack Banda Completo</h3>
+            <p class="card-desc">Todo lo necesario para iniciar tu banda callejera y dominar las calles.</p>
+            <div class="card-features">
+              <div class="feature">
+                <span class="feature-icon">🏠</span>
+                <span>Base exclusiva</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">👕</span>
+                <span>Vestimenta única</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">🔫</span>
+                <span>Armas básicas</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">🎨</span>
+                <span>Grafitis personalizados</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="price">$150,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="org-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Ballas">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Pack Starter</h3>
+            <p class="card-desc">Inicia tu camino en el mundo criminal.</p>
+            <div class="card-features">
+              <div class="feature">
+                <span class="feature-icon">🏠</span>
+                <span>Local pequeño</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">🔫</span>
+                <span>Pistola inicial</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="price">$50,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="org-card">
+          <div class="card-badge new">🆕 Nuevo</div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=600&q=80" alt="Grove Street">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Pack Territorio</h3>
+            <p class="card-desc">Expande tu influencia con zonas de control.</p>
+            <div class="card-features">
+              <div class="feature">
+                <span class="feature-icon">🗺️</span>
+                <span>3 zonas de control</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">💰</span>
+                <span>Ingresos pasivos</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="price">$200,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mafias -->
+    <div class="orgs-category" id="mafias">
+      <div class="category-header">
+        <h2>🎩 Mafias</h2>
+        <p>Elegancia, poder y negocios</p>
+      </div>
+      <div class="orgs-grid">
+        <div class="org-card featured">
+          <div class="card-badge">👑 Premium</div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Mafia Italiana">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Familia Mafiosa</h3>
+            <p class="card-desc">La experiencia mafiosa definitiva. Negocios legítimos como fachada.</p>
+            <div class="card-features">
+              <div class="feature">
+                <span class="feature-icon">🏛️</span>
+                <span>Mansión exclusiva</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">🚗</span>
+                <span>5 vehículos de lujo</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">🔫</span>
+                <span>Arsenal completo</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">💼</span>
+                <span>Negocios de fachada</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="price">$500,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="org-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=600&q=80" alt="Yakuza">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Yakuza Pack</h3>
+            <p class="card-desc">El código de honor japonés.</p>
+            <div class="card-features">
+              <div class="feature">
+                <span class="feature-icon">⛩️</span>
+                <span>Dojo exclusivo</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">🗡️</span>
+                <span>Katanas personalizadas</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="price">$350,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="org-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80" alt="Triada">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Tríada Pack</h3>
+            <p class="card-desc">El poder del dragón oriental.</p>
+            <div class="card-features">
+              <div class="feature">
+                <span class="feature-icon">🐉</span>
+                <span>Casino privado</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">💎</span>
+                <span>Red de contrabando</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="price">$400,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carteles -->
+    <div class="orgs-category" id="carteles">
+      <div class="category-header">
+        <h2>💀 Carteles</h2>
+        <p>El negocio a gran escala</p>
+      </div>
+      <div class="orgs-grid">
+        <div class="org-card featured">
+          <div class="card-badge">⚠️ Élite</div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=600&q=80" alt="Cartel">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Cartel Completo</h3>
+            <p class="card-desc">El imperio del narcotráfico. Control total de la producción y distribución.</p>
+            <div class="card-features">
+              <div class="feature">
+                <span class="feature-icon">🏚️</span>
+                <span>Rancho con laboratorios</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">🚁</span>
+                <span>Helicóptero + blindados</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">🔫</span>
+                <span>Armamento pesado</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">📦</span>
+                <span>Rutas de cargamento</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="price">$750,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="org-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80" alt="Laboratorio">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Pack Laboratorio</h3>
+            <p class="card-desc">Inicia tu producción.</p>
+            <div class="card-features">
+              <div class="feature">
+                <span class="feature-icon">🧪</span>
+                <span>Laboratorio oculto</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">🚐</span>
+                <span>Vehículo de transporte</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="price">$300,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="org-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?auto=format&fit=crop&w=600&q=80" alt="Sicarios">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Pack Sicarios</h3>
+            <p class="card-desc">Protección y eliminación.</p>
+            <div class="card-features">
+              <div class="feature">
+                <span class="feature-icon">🎯</span>
+                <span>5 sicarios NPC</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">🔫</span>
+                <span>Arsenal táctico</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="price">$250,000</span>
+              <a href="https://discord.gg/muvir" class="buy-btn">Adquirir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>¿Listo para dominar las calles?</h2>
+    <p>Únete a Discord para más información y compras</p>
+    <a href="https://discord.gg/muvir" class="cta-btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
+      Ir a Discord
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>Muvi Rp</h3>
+      <p>La mejor experiencia de roleplay en español.</p>
+      <div class="footer-social">
+        <a href="https://discord.gg/muvir" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
+        </a>
+        <a href="https://instagram.com/muvir" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+        </a>
+        <a href="https://tiktok.com/@muvir" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/3046/3046123.png" alt="TikTok">
+        </a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Navegación</h4>
+        <a href="../../index.html#about">Nosotros</a>
+        <a href="../../index.html#gallery">Galería</a>
+        <a href="../../index.html#updates">Novedades</a>
+        <a href="../../index.html#staff">Equipo</a>
+      </div>
+      <div class="footer-column">
+        <h4>Shop</h4>
+        <a href="../vehicles/autos.html">Vehículos</a>
+        <a href="../od/delictivo.html">Sistema OD</a>
+      </div>
+      <div class="footer-column">
+        <h4>Soporte</h4>
+        <a href="../../index.html#contact">Contacto</a>
+        <a href="https://discord.gg/muvir" target="_blank">Discord</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Muvi Rp. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script>
+// Tab switching
+const tabs = document.querySelectorAll('.tab');
+const categories = document.querySelectorAll('.orgs-category');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const category = tab.dataset.category;
+    
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    
+    categories.forEach(cat => {
+      cat.classList.remove('active');
+      if(cat.id === category) {
+        cat.classList.add('active');
+      }
+    });
+  });
+});
+
+// Mobile Menu
+const menuBtn = document.getElementById('menuBtn');
+const closeBtn = document.getElementById('closeBtn');
+const sideMenu = document.getElementById('sideMenu');
+const menuOverlay = document.getElementById('menuOverlay');
+
+function toggleMenu() {
+  sideMenu.classList.toggle('active');
+  menuOverlay.classList.toggle('active');
+}
+
+menuBtn.addEventListener('click', toggleMenu);
+closeBtn.addEventListener('click', toggleMenu);
+menuOverlay.addEventListener('click', toggleMenu);
+
+// Card animations on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.org-card').forEach(card => observer.observe(card));
+</script>
+
+</body>
+</html>

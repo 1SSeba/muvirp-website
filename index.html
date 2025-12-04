@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muvi Rp - La Mejor Experiencia Roleplay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo"><a href="#">Muvi Rp</a></div>
+  <button id="menuBtn">&#9776;</button>
+  <div class="menu">
+    <a href="#about">Nosotros</a>
+    <a href="#gallery">Galería</a>
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle">Shop <span class="dropdown-arrow">▾</span></a>
+      <div class="dropdown-menu">
+        <a href="shop/vehicles/autos.html">🚗 Vehículos</a>
+        <a href="shop/od/delictivo.html">🔫 OD</a>
+      </div>
+    </div>
+    <a href="#updates">Novedades</a>
+    <a href="#staff">Equipo</a>
+    <a href="#contact">Contacto</a>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="side-menu" id="sideMenu">
+  <button class="close-btn" id="closeBtn">&times;</button>
+  <a href="#about" onclick="toggleMenu()">Nosotros</a>
+  <a href="#gallery" onclick="toggleMenu()">Galería</a>
+  <div class="mobile-dropdown">
+    <span class="mobile-dropdown-title">Shop</span>
+    <a href="shop/vehicles/autos.html" onclick="toggleMenu()">🚗 Vehículos</a>
+    <a href="shop/od/delictivo.html" onclick="toggleMenu()">🔫 OD</a>
+  </div>
+  <a href="#updates" onclick="toggleMenu()">Novedades</a>
+  <a href="#staff" onclick="toggleMenu()">Equipo</a>
+  <a href="#contact" onclick="toggleMenu()">Contacto</a>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero">
+  <div id="particles-js"></div>
+  <div class="hero-content">
+    <img src="style/img/sinfondo.png" alt="Logo Muvi Rp">
+    <h1>Muvi Rp</h1>
+    <p>La experiencia de roleplay más inmersiva y profesional. Únete a miles de jugadores en una comunidad activa con actualizaciones constantes.</p>
+    <div class="hero-buttons">
+      <a href="https://discord.gg/muvir" class="btn-primary">
+        <span>🚀</span> Unirse Ahora
+      </a>
+      <a href="#about" class="btn-secondary">
+        <span>📖</span> Conocer Más
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== MEGA BENTO GRID UNIFICADO ==================== -->
+<section class="unified-bento-container">
+  <div class="unified-bento-grid">
+
+    <!-- ══════════ SECCIÓN: SOBRE NOSOTROS ══════════ -->
+    <div class="bento-section-title" id="about">
+      <span class="section-badge">Sobre Nosotros</span>
+      <h2>¿Qué es Muvi Rp?</h2>
+    </div>
+
+    <!-- Vehículos - Grande -->
+    <div class="u-box u-box-large">
+      <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Vehículos">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content">
+        <span class="u-badge">🚗 Premium</span>
+        <h3>+100 Vehículos Reales</h3>
+        <p>Colección exclusiva de autos, motos y vehículos especiales.</p>
+        <a href="shop/vehicles/autos.html" class="u-link">Ver catálogo →</a>
+      </div>
+    </div>
+
+    <!-- Features pequeñas -->
+    <div class="u-box u-box-small">
+      <span class="u-emoji">🎯</span>
+      <h4>Roleplay Serio</h4>
+      <p>Interpretación de calidad</p>
+    </div>
+
+    <div class="u-box u-box-small">
+      <span class="u-emoji">⚡</span>
+      <h4>Sin Lag</h4>
+      <p>Servidores optimizados</p>
+    </div>
+
+    <div class="u-box u-box-small">
+      <span class="u-emoji">🏠</span>
+      <h4>Propiedades</h4>
+      <p>Casas y negocios</p>
+    </div>
+
+    <div class="u-box u-box-small">
+      <span class="u-emoji">🛡️</span>
+      <h4>Anti-Cheat</h4>
+      <p>Sistema avanzado</p>
+    </div>
+
+    <!-- Sistema Delictivo - Mediano -->
+    <div class="u-box u-box-medium">
+      <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Sistema Delictivo">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content">
+        <span class="u-badge">🔫 Acción</span>
+        <h3>Sistema Delictivo</h3>
+        <p>Bandas, robos y territorios</p>
+        <a href="shop/od/delictivo.html" class="u-link">Ver más →</a>
+      </div>
+    </div>
+
+    <div class="u-box u-box-small">
+      <span class="u-emoji">💰</span>
+      <h4>Economía Real</h4>
+      <p>Sistema balanceado</p>
+    </div>
+
+    <div class="u-box u-box-small">
+      <span class="u-emoji">🎁</span>
+      <h4>Eventos Diarios</h4>
+      <p>Premios exclusivos</p>
+    </div>
+
+    <!-- ══════════ SECCIÓN: GALERÍA ══════════ -->
+    <div class="bento-section-title" id="gallery">
+      <span class="section-badge">Galería</span>
+      <h2>Momentos en Muvi Rp</h2>
+    </div>
+
+    <div class="u-box u-box-gallery-main">
+      <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Gaming">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content">
+        <span class="u-badge">🎮 Destacado</span>
+        <h3>Evento Especial</h3>
+        <p>Los mejores momentos de la comunidad</p>
+      </div>
+    </div>
+
+    <div class="u-box u-box-gallery">
+      <img src="https://images.unsplash.com/photo-1493711662062-fa541f7f3d24?auto=format&fit=crop&w=400&q=80" alt="City">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content"><span class="u-tag">🌆</span><h4>Ciudad</h4></div>
+    </div>
+
+    <div class="u-box u-box-gallery">
+      <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=400&q=80" alt="Racing">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content"><span class="u-tag">🏎️</span><h4>Carreras</h4></div>
+    </div>
+
+    <div class="u-box u-box-gallery">
+      <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=400&q=80" alt="Night">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content"><span class="u-tag">🌃</span><h4>Nocturno</h4></div>
+    </div>
+
+    <div class="u-box u-box-gallery">
+      <img src="https://images.unsplash.com/photo-1560472355-536de3962603?auto=format&fit=crop&w=400&q=80" alt="Party">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content"><span class="u-tag">🎉</span><h4>Eventos</h4></div>
+    </div>
+
+    <div class="u-box u-box-wide">
+      <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Tech">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content">
+        <span class="u-badge">💻 Sistemas</span>
+        <h3>Tecnología Avanzada</h3>
+        <p>Scripts únicos y optimizados</p>
+      </div>
+    </div>
+
+    <!-- ══════════ SECCIÓN: NOVEDADES ══════════ -->
+    <div class="bento-section-title" id="updates">
+      <span class="section-badge">Novedades</span>
+      <h2>Últimas Actualizaciones</h2>
+    </div>
+
+    <div class="u-box u-box-update-main">
+      <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Update">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content">
+        <span class="u-badge">🎮 Gran Update</span>
+        <h3>Sistema de Misiones 2.0</h3>
+        <p>Nuevo sistema con recompensas exclusivas</p>
+      </div>
+    </div>
+
+    <div class="u-box u-box-update">
+      <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=400&q=80" alt="Cars">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content"><span class="u-tag">🚗</span><h4>+50 Autos Nuevos</h4></div>
+    </div>
+
+    <div class="u-box u-box-update">
+      <img src="https://images.unsplash.com/photo-1493711662062-fa541f7f3d24?auto=format&fit=crop&w=400&q=80" alt="Map">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content"><span class="u-tag">🗺️</span><h4>Nueva Zona Norte</h4></div>
+    </div>
+
+    <div class="u-box u-box-update">
+      <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=400&q=80" alt="Security">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content"><span class="u-tag">🔒</span><h4>Anti-Cheat v3</h4></div>
+    </div>
+
+    <div class="u-box u-box-update">
+      <img src="https://images.unsplash.com/photo-1560472355-536de3962603?auto=format&fit=crop&w=400&q=80" alt="Events">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content"><span class="u-tag">🎉</span><h4>Navidad 2025</h4></div>
+    </div>
+
+    <!-- ══════════ SECCIÓN: STAFF ══════════ -->
+    <div class="bento-section-title" id="staff">
+      <span class="section-badge">Nuestro Equipo</span>
+      <h2>Staff Dedicado</h2>
+    </div>
+
+    <div class="u-box u-box-staff-main">
+      <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Fundador">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content">
+        <span class="u-badge">👑 Fundador</span>
+        <h3>Ignacio</h3>
+        <p>Visionario y creador de Muvi Rp</p>
+      </div>
+    </div>
+
+    <div class="u-box u-box-staff">
+      <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80" alt="Camila">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content"><span class="u-tag">⚡</span><h4>Camila</h4><p>Admin</p></div>
+    </div>
+
+    <div class="u-box u-box-staff">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Lucas">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content"><span class="u-tag">🛡️</span><h4>Lucas</h4><p>Moderador</p></div>
+    </div>
+
+    <div class="u-box u-box-staff">
+      <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Sofia">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content"><span class="u-tag">💬</span><h4>Sofía</h4><p>Soporte</p></div>
+    </div>
+
+    <div class="u-box u-box-staff">
+      <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" alt="Diego">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content"><span class="u-tag">🔧</span><h4>Diego</h4><p>Developer</p></div>
+    </div>
+
+    <div class="u-box u-box-wide">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Team">
+      <div class="u-box-overlay"></div>
+      <div class="u-box-content">
+        <span class="u-badge">🤝 Equipo</span>
+        <h3>¿Quieres unirte?</h3>
+        <p>Buscamos personas apasionadas</p>
+      </div>
+    </div>
+
+    <!-- ══════════ SECCIÓN: CONTACTO ══════════ -->
+    <div class="bento-section-title" id="contact">
+      <span class="section-badge">Contacto</span>
+      <h2>¿Tienes dudas?</h2>
+    </div>
+
+    <div class="u-box u-box-contact">
+      <div class="u-contact-icon"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord"></div>
+      <h4>Discord</h4>
+      <p>Únete a la comunidad</p>
+      <a href="https://discord.gg/muvir" target="_blank" class="u-link">Unirse →</a>
+    </div>
+
+    <div class="u-box u-box-contact">
+      <div class="u-contact-icon"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"></div>
+      <h4>Instagram</h4>
+      <p>Síguenos</p>
+      <a href="https://instagram.com/muvir" target="_blank" class="u-link">@MuviRp →</a>
+    </div>
+
+    <div class="u-box u-box-contact">
+      <div class="u-contact-icon"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046123.png" alt="TikTok"></div>
+      <h4>TikTok</h4>
+      <p>Contenido exclusivo</p>
+      <a href="https://tiktok.com/@muvir" target="_blank" class="u-link">@MuviRp →</a>
+    </div>
+
+    <div class="u-box u-box-contact">
+      <div class="u-contact-icon"><img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email"></div>
+      <h4>Email</h4>
+      <p>Soporte directo</p>
+      <a href="mailto:contacto@muvir.com" class="u-link">Escribir →</a>
+    </div>
+
+    <!-- CTA -->
+    <div class="u-box u-box-cta">
+      <div class="u-cta-inner">
+        <h3>¿Listo para la aventura?</h3>
+        <p>Únete a miles de jugadores</p>
+        <a href="https://discord.gg/muvir" class="btn-primary"><span>🎮</span> Comenzar</a>
+      </div>
+    </div>
+
+    <!-- Terms -->
+    <div class="u-box u-box-terms" id="terms">
+      <span class="u-emoji">📜</span>
+      <h4>Normativa</h4>
+      <p>Lee nuestras reglas</p>
+      <button id="termsBtn" class="u-link-btn">Ver términos →</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Terms Modal -->
+<div id="termsModal">
+  <div class="modal-content">
+    <button id="closeModal">&times;</button>
+    <h2>📜 Términos y Condiciones</h2>
+    <div class="terms-list">
+      <div class="term-item">
+        <span class="term-number">01</span>
+        <div>
+          <h4>Respeto Mutuo</h4>
+          <p>Respeto mutuo entre todos los miembros de la comunidad.</p>
+        </div>
+      </div>
+      <div class="term-item">
+        <span class="term-number">02</span>
+        <div>
+          <h4>Roleplay Constante</h4>
+          <p>Mantener el roleplay en todo momento dentro del servidor.</p>
+        </div>
+      </div>
+      <div class="term-item">
+        <span class="term-number">03</span>
+        <div>
+          <h4>Fair Play</h4>
+          <p>Prohibido el uso de cheats, exploits o acciones que afecten la experiencia.</p>
+        </div>
+      </div>
+      <div class="term-item">
+        <span class="term-number">04</span>
+        <div>
+          <h4>Normas del Servidor</h4>
+          <p>Toda interacción debe seguir las normas establecidas.</p>
+        </div>
+      </div>
+      <div class="term-item">
+        <span class="term-number">05</span>
+        <div>
+          <h4>Responsabilidad</h4>
+          <p>Muvi Rp no se hace responsable de daños fuera del juego.</p>
+        </div>
+      </div>
+      <div class="term-item">
+        <span class="term-number">06</span>
+        <div>
+          <h4>Aceptación</h4>
+          <p>Al participar aceptas cumplir con estos términos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>Muvi Rp</h3>
+      <p>La mejor experiencia de roleplay en español.</p>
+      <div class="footer-social">
+        <a href="https://discord.gg/muvir" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
+        </a>
+        <a href="https://instagram.com/muvir" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+        </a>
+        <a href="https://tiktok.com/@muvir" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/3046/3046123.png" alt="TikTok">
+        </a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Navegación</h4>
+        <a href="#about">Nosotros</a>
+        <a href="#gallery">Galería</a>
+        <a href="#updates">Novedades</a>
+        <a href="#staff">Equipo</a>
+      </div>
+      <div class="footer-column">
+        <h4>Recursos</h4>
+        <a href="shop/vehicles/autos.html">Autos Reales</a>
+        <a href="shop/od/delictivo.html">Sistema Delictivo</a>
+        <a href="#terms">Normativa</a>
+        <a href="#contact">Contacto</a>
+      </div>
+      <div class="footer-column">
+        <h4>Soporte</h4>
+        <a href="#contact">Contacto</a>
+        <a href="https://discord.gg/muvir" target="_blank">Discord</a>
+        <a href="mailto:contacto@muvir.com">Email</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Muvi Rp. Todos los derechos reservados.</p>
+    <p>Developed by @SSeb4z</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="script/scripts.js"></script>
+</body>
+</html>
