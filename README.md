@@ -33,4 +33,5 @@ Este proyecto contiene el sitio web de MUVIRP con secciones para shop, vehículo
 
 ## Autor
 
-MUVIRP
+SSeb4z
+
